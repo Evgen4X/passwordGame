@@ -1,0 +1,144 @@
+fieldset {
+	border-width: 2px;
+	border-color: #000;
+}
+
+legend {
+	font-size: large;
+}
+
+input[type="text"],
+[type="email"] {
+	margin: 5px;
+	width: 15%;
+	height: 15px;
+	background-color: #565656;
+	color: white;
+	border: 2px solid black;
+	border-radius: 5px;
+	transition: width 0.5s ease-in-out, height 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+input[type="text"]::placeholder,
+[type="email"]::placeholder {
+	color: #bbb;
+}
+
+input[type="text"]:hover,
+[type="email"]:hover {
+	width: 17%;
+	height: 17px;
+	box-shadow: 0 0 3px black;
+}
+
+input[type="text"]:focus {
+	width: 100%;
+	height: 25px;
+	box-shadow: 0 0 10px aqua;
+}
+
+input[type="email"]:focus {
+	width: 50%;
+	height: 25px;
+	box-shadow: 0 0 10px aqua;
+}
+
+input[type="submit"],
+#login {
+	margin: 5px;
+	width: 16%;
+	height: 20px;
+	background-color: #757575;
+	color: white;
+	border: 2px solid black;
+	border-radius: 9px;
+	transition: width 0.5s ease-in-out, height 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover {
+	width: 18%;
+	height: 25px;
+	box-shadow: 0 0 3px black;
+}
+
+input[type="submit"]:focus {
+	width: 14%;
+	height: 20px;
+	box-shadow: 0 0 10px black;
+}
+
+input[type="submit"]:disabled {
+	background-color: #2e2e2e;
+	color: #bbb;
+	text-decoration: line-through;
+}
+
+div[id^="w"] {
+	opacity: 0;
+	color: red;
+	width: 40%;
+	height: 20%;
+	display: block;
+	word-wrap: break-word;
+	background-color: rgba(255, 0, 0, 0.33);
+	padding: 5px;
+	border: 5px solid red;
+	margin: 10px 15px 0px 15px;
+	border-radius: 1em;
+	order: 4;
+}
+
+@media screen and (max-width: 250px) {
+	div[id^="w"] {
+		flex-basis: 100%;
+	}
+}
+
+@media screen and (min-width: 250px) {
+	div[id^="w"] {
+		flex-basis: calc(100% / 3);
+	}
+}
+
+@media screen and (min-width: 650px) {
+	div[id^="w"] {
+		flex-basis: calc(100% / 4);
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	div[id^="w"] {
+		flex-basis: calc(100% / 5);
+	}
+}
+
+div > span:not([id]) {
+	font-size: 115%;
+	font-weight: bolder;
+	text-align: center;
+	display: block;
+}
+
+#container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+span[id="a"] {
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
+
+#box {
+	height: 50px;
+	width: 100%;
+}
+
+hr {
+	border: 1px solid currentColor;
+}
+
+#error {
+	color: #f00;
+}

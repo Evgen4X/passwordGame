@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" href="icon.png" />
+		<link rel="stylesheet" href="register.css" />
+		<meta charset="UTF-8" />
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+		</script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		<title>Register</title>
+	</head>
+
+	<body>
+		<form action="registered.html">
+			<fieldset>
+				<legend>Register form</legend>
+				<input id="email" type="email" name="email" placeholder="Email" required /><br />
+				<input id="password" type="text" name="password" placeholder="Password" maxlength="1000" required /><br />
+				<input id="submit" type="submit" value="Register" disabled />
+			</fieldset>
+		</form>
+		<div id="container">
+			<div id="w33">
+				<span>Rule 33</span>
+				<hr />
+				<span id="w33span"></span>
+			</div>
+			<div id="w32">
+				<span>Rule 32</span>
+				<hr />
+				Those binary numbers must add up to 67
+			</div>
+			<div id="w31">
+				<span>Rule 31</span>
+				<hr />
+				Your password must contain exactly 3 numbers in <a href="https://en.wikipedia.org/wiki/Binary_number" target="blank_">binary format with at least 5 digits</a>
+			</div>
+			<div id="w30">
+				<span>Rule 30</span>
+				<hr />
+				There must be at least 3 roman numbers between 1 and 10 in the password
+			</div>
+			<div id="w29">
+				<span>Rule 29</span>
+				<hr />
+				Your password must <b>begin</b> with at least 3 symbols of <a href="https://www.cogsci.ed.ac.uk/~richard/utf-8.cgi?input=&mode=char" target="blank_">decimal code</a> greater than 10 000
+			</div>
+			<div id="w28">
+				<span>Rule 28</span>
+				<hr />
+				The password must have a name of a popular programming language
+			</div>
+			<div id="w27">
+				<span>Rule 27</span>
+				<hr />
+				Your password must include today's date (format: dd.mm.yyyy)
+			</div>
+			<div id="w26">
+				<span>Rule 26</span>
+				<hr />
+				Include the hex color of the rectangle below in your password
+				<div id="box"></div>
+			</div>
+			<div id="w25">
+				<span>Rule 25</span>
+				<hr />
+				There must be a any greek letter in you password
+			</div>
+			<div id="w24">
+				<span>Rule 24</span>
+				<hr />
+				Your password must include a link to an English Wikipedia thats title is at least 10 symbols long
+			</div>
+			<div id="w23">
+				<span>Rule 23</span>
+				<hr />
+				The sum of years of 20th century must be a year of 40th century
+			</div>
+			<div id="w22">
+				<span>Rule 22</span>
+				<hr />
+				Enter a year of the 20th century in your password
+			</div>
+			<div id="w21">
+				<span>Rule 21</span>
+				<hr />
+				<span id="country"></span>
+			</div>
+			<div id="w20">
+				<span>Rule 20</span>
+				<hr />
+				<span id="w20span"></span>
+			</div>
+			<div id="w19">
+				<span>Rule 19</span>
+				<hr />
+				There must be a name of a month in the password
+			</div>
+			<div id="w18">
+				<span>Rule 18</span>
+				<hr />
+				<span id="deny"></span>
+			</div>
+			<div id="w17">
+				<span>Rule 17</span>
+				<hr />
+				Include one of these sentences in your password:<br />
+				<ul>
+					<li>Jazz box vexed me</li>
+					<li>Quick fox eats</li>
+					<li>A dog swiftly jumps</li>
+					<li>Glowing sun shines</li>
+					<li>Buzzing bee smiles</li>
+				</ul>
+			</div>
+			<div id="w16">
+				<span>Rule 16</span>
+				<hr />
+				Add a number between 1 000 000 and 9 999 999 in your password
+			</div>
+			<div id="w15">
+				<span>Rule 15</span>
+				<hr />
+				Product of <a href="https://en.wikipedia.org/wiki/ASCII" target="blank_">ASCII codes</a> of the first text in quotes must be between 4225 and 4900
+			</div>
+			<div id="w14">
+				<span>Rule 14</span>
+				<hr />
+				Add some text in <a href="https://en.wikipedia.org/wiki/Quotation_mark" target="_blank">quots</a> in your password
+			</div>
+			<div id="w13">
+				<span>Rule 13</span>
+				<hr />
+				There must be at least 4 words (separated by space) in your password
+			</div>
+			<div id="w12">
+				<span>Rule 12</span>
+				<hr />
+				Include the random English letter that I've just generated in your password (case-sensitive)
+			</div>
+			<div id="w11">
+				<span>Rule 11</span>
+				<hr />
+				The link must have the "<a href="https://en.wikipedia.org/wiki/HTTPS" target="_blank">secured</a>" status and "<a href="https://en.wikipedia.org/wiki/.com" target="_blank">commercial</a>" domain
+			</div>
+			<div id="w10">
+				<span>Rule 10</span>
+				<hr />
+				Your password must have a link
+			</div>
+			<div id="w9">
+				<span>Rule 9</span>
+				<hr />
+				All rules are <a href="https://en.wikipedia.org/wiki/Case_sensitivity" target="_blank">case-sensitive</a>
+			</div>
+			<div id="w8">
+				<span>Rule 8</span>
+				<hr />
+				The password should contain no more than 10 symbols of your e-mail
+			</div>
+			<div id="w7">
+				<span>Rule 7</span>
+				<hr />
+				It must be not your e-mail
+			</div>
+			<div id="w6">
+				<span>Rule 6</span>
+				<hr />
+				The password must contain an e-mail address
+			</div>
+			<br />
+			<div id="w5">
+				<span>Rule 5</span>
+				<hr />
+				Your password must include a symbol of a chemical element
+			</div>
+			<br />
+			<div id="w4">
+				<span>Rule 4</span>
+				<hr />
+				<span id="w4span"></span>
+			</div>
+			<br />
+			<div id="w3">
+				<span>Rule 3</span>
+				<hr />
+				There must not be any 3 same symbols in a row in your password
+			</div>
+			<br />
+			<div id="w2">
+				<span>Rule 2</span>
+				<hr />
+				The password must be at least 9 symbols long
+			</div>
+			<br />
+			<div id="w1">
+				<span>Rule 1</span>
+				<hr />
+				Password must include at least 1 uppercase and lowercase letter, number and special symbol
+			</div>
+			<br />
+		</div>
+		<script src="set_style.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

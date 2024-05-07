@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="registered.css" />
+		<link rel="stylesheet" href="register.css" />
+		<meta charset="UTF-8" />
+		<title>Log in</title>
+	</head>
+
+	<body>
+		<h1>Please, log in</h1>
+		<fieldset>
+			<legend>Log in form</legend>
+			<input id="email" type="email" name="email" placeholder="Email" /><br />
+			<input id="password" type="text" name="password" placeholder="Password" maxlength="1000" /><br />
+			<span id="error"></span><br />
+			<button id="login" onclick="login();">Log in</button>
+		</fieldset>
+		<script src="login.js"></script>
+	</body>
+</html>
